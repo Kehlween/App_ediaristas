@@ -15,6 +15,14 @@ class User extends Authenticatable implements JWTSubject
     use HasFactory, Notifiable;
 
     /**
+     * Define o nome da tabela para o model
+     *
+     * @var string
+     */
+
+    protected $table = 'users_admin';
+
+    /**
      * The attributes that are mass assignable.
      *
      * @var array
